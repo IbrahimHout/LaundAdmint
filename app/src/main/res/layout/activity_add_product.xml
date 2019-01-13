@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="#8aeeeeee"
+    android:orientation="vertical"
+    tools:context=".AddCategoryActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        app:title="Add Product"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        android:text="@string/adding_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/categoryName"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:hint="@string/product_name"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/productDescription"
+        android:hint="@string/category_description"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:lines="1"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/productPrice"
+        android:hint="@string/product_price"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:lines="1"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/photoLink"
+        android:hint="photolink"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/uploadProductPhotoButton"
+        android:text="@string/upload_a_photo"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:elevation="3dp"
+        android:textAllCaps="false"
+
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/addProudctButton"
+        android:text="@string/addProduct"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="16dp"
+        android:elevation="3dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
