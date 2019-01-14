@@ -7,6 +7,7 @@
     android:id="@+id/layout"
     android:background="#8aeeeeee"
     android:orientation="vertical"
+
     tools:context=".AddCategoryActivity">
 
 

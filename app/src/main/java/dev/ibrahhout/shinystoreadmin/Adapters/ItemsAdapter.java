@@ -88,7 +88,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.CategoryView
             if (!((Category) item).getDescription().isEmpty())
             holder.itemDescription.setText(((Category) item).getDescription());
 
-            if (!((Category) item).getImageLink().isEmpty() && ((Category) item).getImageLink()!=null)
+            if ( ((Category) item).getImageLink()!=null &&!((Category) item).getImageLink().isEmpty() )
             {
 
                 Picasso.get().load(((Category) item).getImageLink()).placeholder(R.drawable.ic_loading_24dp).error(R.drawable.ic_error_black_24dp).into(holder.itemImage);
