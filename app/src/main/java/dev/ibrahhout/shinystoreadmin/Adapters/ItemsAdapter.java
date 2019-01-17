@@ -76,7 +76,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.CategoryView
                 String id = ((Category) finalItem2).getId();
                 intent.putExtra(Constants.EXTRA_CATEGORY_ID,id);
                 Log.d(TAG, "onClick: card id is "+id);
-                context.startActivity(intent);f
+                context.startActivity(intent);
             });
             if (!((Category) item).getName().isEmpty())
             holder.itemName.setText(((Category) item).getName());
