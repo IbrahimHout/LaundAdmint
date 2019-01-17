@@ -61,7 +61,7 @@ public class ManageProductActivity extends AppCompatActivity {
         products = new ArrayList<>();
         itemsAdapter = new ItemsAdapter(this,products,catId);
         categoriesRecyclerView.setAdapter(itemsAdapter);
-        categoriesRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        categoriesRecyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
         addCatFAB.setOnClickListener(new View.OnClickListener() {
             @Override

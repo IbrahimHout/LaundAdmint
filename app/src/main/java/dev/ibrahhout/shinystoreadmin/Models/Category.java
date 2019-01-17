@@ -8,6 +8,8 @@ public class Category {
     String description;
     String imageLink;
 
+    int views;
+
 
     public Category() {
 
@@ -43,5 +45,13 @@ public class Category {
 
     public void setImageLink(String imageLink) {
         this.imageLink = imageLink;
+    }
+
+    public int getViews() {
+        return views;
+    }
+
+    public void setViews(int views) {
+        this.views = views;
     }
 }

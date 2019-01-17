@@ -79,12 +79,9 @@ public class ManageCategories extends Fragment {
         categoriesRecyclerView.setAdapter(itemsAdapter);
         categoriesRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false));
 
-        addCatFAB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),AddCategoryActivity.class);
-                startActivity(intent);
-            }
+        addCatFAB.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getActivity(),AddCategoryActivity.class);
+            startActivity(intent);
         });
 
 

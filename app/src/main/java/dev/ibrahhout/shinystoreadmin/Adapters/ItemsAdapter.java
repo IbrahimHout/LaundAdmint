@@ -66,21 +66,17 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.CategoryView
         if (item instanceof Category) {
 
 
-            item = ((Category) item);
             // it is category
 
 
             final Object finalItem2 = item;
-            holder.itemCard.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+            holder.itemCard.setOnClickListener(view -> {
 
-                    Intent intent = new Intent(context,ManageProductActivity.class);
-                    String id = ((Category) finalItem2).getId();
-                    intent.putExtra(Constants.EXTRA_CATEGORY_ID,id);
-                    Log.d(TAG, "onClick: card id is "+id);
-                    context.startActivity(intent);
-                }
+                Intent intent = new Intent(context,ManageProductActivity.class);
+                String id = ((Category) finalItem2).getId();
+                intent.putExtra(Constants.EXTRA_CATEGORY_ID,id);
+                Log.d(TAG, "onClick: card id is "+id);
+                context.startActivity(intent);f
             });
             if (!((Category) item).getName().isEmpty())
             holder.itemName.setText(((Category) item).getName());
@@ -133,7 +129,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.CategoryView
 
         } else {
             //it is a product
-            item = ((Product) item);
             // it is category
             if (!((Product) item).getName().isEmpty())
                 holder.itemName.setText(((Product) item).getName());
@@ -174,6 +169,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.CategoryView
                             .show();
                 }
             });
+
 
 
 

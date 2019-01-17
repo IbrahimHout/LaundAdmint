@@ -13,8 +13,7 @@
         android:roundIcon="@drawable/logo_van"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        >
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +24,11 @@
         <activity android:name=".AddCategoryActivity" />
         <activity android:name=".AddProductActivity" />
         <activity android:name=".ManageProductActivity" />
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>
-
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".ProductDetailsActivity">
+        </activity>
     </application>
 
 </manifest>
